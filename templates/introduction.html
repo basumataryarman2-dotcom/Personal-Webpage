@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <title>Webpage </title>
-  </head>
-    <body>
-         <nav class="bg-light border navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><span class="blue">HOME</span></a>
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav me-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="/Intresets">Intresets</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/Skills">Buy</a></li>
-                        </ul>
-                </div>
-            </div>
-        </nav>
-        <main class="container py-5 text-center">
-            Hey its me its verity
-        </main>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block title %}
+    Introduction
+{% endblock %}
+{% block main %}
+<div class = "mb-3">
+    <img src="static/picture.jpg" class="rounded d-block mx-auto" name="face" alt="picture.jpg" width="150">
+</div>
+<div class="text-warp">
+    <p class="text-warp text-start {{ 'text-white' if mode == 'dark' else 'text-dark' }}" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        Hi! i'm Arman Basumatary currently a freshman in IIITA studying in the IT branch and I come from Assam.
+    </p>
+</div>
+{% endblock %}
