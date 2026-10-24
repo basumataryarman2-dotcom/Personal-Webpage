@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+    Interests
+{% endblock %}
+{% block main %}
+<div class="text-warp">
+    <p class="text-warp text-start {{ 'text-white' if mode == 'dark' else 'text-dark' }}" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        I have a few interests like playing games and watching anime. I'm not really much of an outdoors person.
+        Here is a list of a few of my favourite games and anime
+    </p>
+</div>
+
+<div class="list-group" >
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        My favourite anime
+    </a>
+    <a href="https://anilist.co/anime/20031/D-Frag/" class="list-group-item list-group-item-action">D frag</a>
+    <a href="https://anilist.co/anime/21827/Violet-Evergarden/" class="list-group-item list-group-item-action">Violet Evergarden</a>
+    <a href="https://anilist.co/anime/21355/ReZERO-Starting-Life-in-Another-World-/" class="list-group-item list-group-item-action">Re:zero</a>
+</div>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        My favourite games
+    </a>
+    <a href=https://en.wikipedia.org/wiki/Persona_3_Reload class="list-group-item list-group-item-action">Persona 3 Reload</a>
+    <a href=https://en.wikipedia.org/wiki/Library_of_Ruina class="list-group-item list-group-item-action">Library of Ruina</a>
+    <a href="https://en.wikipedia.org/wiki/Hollow_Knight" class="list-group-item list-group-item-action">Hollow knight</a>
+</div>
+{% endblock %}

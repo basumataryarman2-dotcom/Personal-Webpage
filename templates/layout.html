@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--mostly copy paste from boostrap cause idk how all this works-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--bootstrap-->
@@ -18,18 +19,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav me-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="/Intresets">Interests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Interests">Interests</a></li>
                             <li class="nav-item"><a class="nav-link" href="/Skills">Skills</a></li>
                         </ul>
                         {% if mode=="light" %}
-                        <form action="/" method="post">
+                        <form action="{{current}}" method="post">
                         <div class="d-flex justify-content-end ms-md-auto">
                             <button type="submit" class="btn btn-outline-secondary">Dark mode</button>
                         </div>
                         </form>
                         {% endif %}
                         {% if mode=="dark"%}
-                        <form action="/" method="post">
+                        <form action="{{ current }}" method="post">
                         <div class="d-flex justify-content-end ms-md-auto">
                             <button type="submit" class="btn btn-outline-light">Light mode</button>
                         </div>

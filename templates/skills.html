@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}
+    Skills
+{% endblock %}
+{% block main %}
+<div class="text-warp mb-3">
+    <p class="text-warp text-start {{ 'text-white' if mode == 'dark' else 'text-dark' }}" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        As a first year i don't really know much just some stuff like python till like stuff like OOP and an okay amount of C (like till hash tables) some webdev like html, flask and some basic sql. here are the resources i used to learn all of those things saw a video for STL in C++ that's about it.
+    </p>
+</div>
+<div class="card mb-3" style="width: 18rem;">
+  <img src="static/cs50.jpg" class="card-img-top" alt="cs50.jpg">
+  <div class="card-body mb-3">
+    <h5 class="card-title">Harvard Cs50</h5>
+    <p class="card-text">Learnt most of what i know about programming from here</p>
+    <a href="https://www.edx.org/cs50" class="btn btn-primary">CS50</a>
+</div>
+</div>
+<div class="card mb-3" style="width: 18rem;">
+  <img src="static/unnamed.png" class="FreeCodeCamp" alt="freecodecamp.jpg">
+  <div class="card-body mb-3">
+    <h5 class="card-title">Free Code Camp</h5>
+    <p class="card-text">Learnt most of the extra stuff about python like OOP, classes and stuff from here</p>
+    <a href="https://www.freecodecamp.org/" class="btn btn-primary">Free Code Camp</a>
+  </div>
+</div>
+{% endblock %}
